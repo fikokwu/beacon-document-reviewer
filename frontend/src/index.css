@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  /* RegenMed brand: orange #e15f09, green #62783f */
+  --color-brand: #e15f09;
+  --color-brand-dark: #c04f05;
+  --color-brand-soft: #fdf0e7;
+  --color-green: #62783f;
+  --color-green-soft: #eef2e7;
+  --color-pass: #62783f;
+  --color-pass-soft: #eef2e7;
+  --color-fail: #b8470a;
+  --color-fail-soft: #fdf0e7;
+  --color-warn: #a15c07;
+  --color-warn-soft: #fef4e6;
+  --color-info: #62783f;
+  --color-info-soft: #eef2e7;
+}
+
+body {
+  background: #f5f7fa;
+  color: #1f2933;
+}
