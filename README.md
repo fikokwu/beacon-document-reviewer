@@ -142,4 +142,4 @@ A hackathon prototype built in one day for the RegenMed (Lake Superior Centre fo
 
 ## About
 
-Built by [@fikokwu](https://github.com/fikokwu) and [@oadep-source](https://github.com/oadep-source) (Omolayo) for the RegenMed hackathon challenge.
+Built by [@fikokwu](https://github.com/fikokwu) and [@oadep-source](https://github.com/oadep-source) (Omolayo) for The Thunder Bay AI hackathon challenge: RegenMed Document Reviewer.
