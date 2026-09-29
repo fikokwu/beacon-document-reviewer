@@ -4,7 +4,7 @@
 **Goal:** A public URL that judges can use: the MVP.
 **Result:** ✅ Goal met. **The MVP is live, more than 2 hours before the 2 pm deadline.**
 
-**Live app:** https://regenmed-reviewer-211763216976.northamerica-northeast2.run.app
+**Live app:** <your-cloud-run-url>
 
 ## Summary (plain English)
 Anyone with the link can now open the app in a browser, upload a scanned form, and get the report. Nothing to install and no login. It runs on Google Cloud in Toronto, the AI key is stored in Google's secret vault (not in the code), and one copy of the app is always kept running, so judges never wait for it to start up.

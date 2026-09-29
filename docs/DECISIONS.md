@@ -104,7 +104,7 @@ A struck-through row needs initials and a date on the strike-through, per good d
 ## ADR-013 — Cloud Run deployment settings
 **Status:** Accepted (Sprint 4)
 
-- **Project:** `gen-lang-client-0784934773`, the same project as the Gemini key, so billing is in one place.
+- **Project:** `<your-gcp-project>`, the same project as the Gemini key, so billing is in one place.
 - **`--timeout 300`:** the two-page Lot Log takes about 100 s end to end. The Cloud Run default (300 s) is kept explicit so nobody lowers it by accident.
 - **`--min-instances 1`:** no cold start while judges test. Costs a little per hour. Set it to 0 after the event (DEPLOY.md).
 - **`--max-instances 3`:** caps the cost and the Gemini spend if the URL gets hammered.

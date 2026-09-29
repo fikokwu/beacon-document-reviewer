@@ -38,4 +38,4 @@ Screenshots: `docs/screenshots/` (upload, progress, PASS on mobile, FAIL Lot Log
 
 ## Next — Sprint 4: Deploy (target 12:15)
 Dockerfile (multi-stage: build the frontend, then Python), Cloud Run in `northamerica-northeast2`, the Gemini key in Secret Manager, public URL smoke test.
-**Needed from you:** `gcloud auth login` on this machine, and confirm the GCP project to use (AI Studio project 211763216976 has billing).
+**Needed from you:** `gcloud auth login` on this machine, and confirm the GCP project to use (AI Studio project <project-number> has billing).

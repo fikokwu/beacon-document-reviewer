@@ -1,10 +1,10 @@
 # Deployment Runbook
 
-**Live URL:** https://regenmed-reviewer-211763216976.northamerica-northeast2.run.app
+**Live URL:** <your-cloud-run-url>
 
 | Setting | Value |
 |---|---|
-| GCP project | `gen-lang-client-0784934773` (number 211763216976; the same project as the Gemini key) |
+| GCP project | `<your-gcp-project>` (the same project as the Gemini key) |
 | Service | Cloud Run `regenmed-reviewer`, region `northamerica-northeast2` (Toronto) |
 | Image | Built by Cloud Build from the repo `Dockerfile`: Node builds the React app, then Python 3.12-slim serves the API and the page |
 | Secret | `gemini-api-key` in Secret Manager → env `GEMINI_API_KEY` |
@@ -16,7 +16,7 @@
 
 ```bash
 gcloud auth login                     # the account that owns the project
-gcloud config set project gen-lang-client-0784934773
+gcloud config set project <your-gcp-project>
 git checkout main && git pull
 gcloud run deploy regenmed-reviewer --source . --region northamerica-northeast2 \
   --allow-unauthenticated --set-secrets GEMINI_API_KEY=gemini-api-key:latest \
@@ -27,7 +27,7 @@ gcloud run deploy regenmed-reviewer --source . --region northamerica-northeast2 
 ## Smoke test
 
 ```bash
-U=https://regenmed-reviewer-211763216976.northamerica-northeast2.run.app
+U=<your-cloud-run-url>
 curl $U/api/health                                   # {"ok":true}
 curl -F "file=@tests/fixtures/samples/24015 QS-F-049_12052024134037.PDF;type=application/pdf" $U/api/review
 ```
@@ -44,5 +44,5 @@ curl -F "file=@tests/fixtures/samples/24015 QS-F-049_12052024134037.PDF;type=app
 
 ## One-time setup (already done, 2026-09-26)
 1. Enabled APIs: Cloud Run, Cloud Build, Artifact Registry, Secret Manager.
-2. Created secret `gemini-api-key` and granted `roles/secretmanager.secretAccessor` to `211763216976-compute@developer.gserviceaccount.com`.
+2. Created secret `gemini-api-key` and granted `roles/secretmanager.secretAccessor` to `<project-number>-compute@developer.gserviceaccount.com`.
 3. Granted `roles/run.builder` to the same service account. New projects need this for `--source` builds.

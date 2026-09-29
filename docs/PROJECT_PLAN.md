@@ -17,7 +17,7 @@ Three panel judges review every project; the challenge sponsor (RegenMed) review
 |---|---|---|
 | **Performance: accuracy** | AI only reads; tested Python rules judge; unreadable → "needs confirmation" | Live scorecard 11/11 (`scripts/scorecard.py`) |
 | **Performance: speed** | Compact outputs, parallel pages/parts, Flash detection | 7–25 s per form |
-| **UI/UX** | One-screen flow, drop a PDF and get PASS/FAIL, issues by page/section/row/field; no instructions needed | Screenshots in `docs/screenshots/` |
+| **UI/UX** | One-screen flow, drop a PDF and get PASS/FAIL, issues by page/section/row/field; no instructions needed | Screenshots in `docs/images/` |
 | **Interesting features** | Auto form detection (4 types), multi-form PDFs, void handling, *next:* issue highlighting on the page image | Sprints 6–9 |
 | **Relevance to RegenMed** | Catches the routine misses that send ~50% of forms back; keeps the two-person review | `docs/BUSINESS_CASE.md` |
 
@@ -25,7 +25,7 @@ Three panel judges review every project; the challenge sponsor (RegenMed) review
 
 - **Short sprints** (a half day to a day during the hackathon). Each sprint has a goal, a backlog slice and a short review/retro logged in [docs/sprints/](sprints/).
 - **Backlog** lives in the table below and is mirrored as GitHub Issues.
-- **Branch → PR → CI green → review → merge to `main`.** See [CONTRIBUTING.md](CONTRIBUTING.md).
+- **Branch → PR → CI green → review → merge to `main`.**
 - **Definition of Done** (every item):
   1. Code merged to `main` with CI passing
   2. Tests for new rules and logic

@@ -4,12 +4,12 @@
 
 ## Using the app
 
-1. Open **https://regenmed-reviewer-211763216976.northamerica-northeast2.run.app**
+1. Open the app's URL (see [DEPLOY.md](DEPLOY.md) to run your own copy).
 2. Drag one scanned PDF of a RegenMed form onto the upload area, or click to choose a file.
    - One PDF at a time, up to 20 MB and 10 pages.
 3. Wait while the form is read and checked. A progress message shows what's happening. It usually takes 15–30 seconds.
 
-![Upload page](screenshots/upload.png)
+![Upload page](images/upload.png)
 
 ## Reading the result
 

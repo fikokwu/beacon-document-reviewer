@@ -47,7 +47,7 @@
 - 12 new tests for compact cell parsing (105 offline tests)
 
 ### Sprint 4 — Deploy (2026-09-26)
-- Live on Cloud Run: https://regenmed-reviewer-211763216976.northamerica-northeast2.run.app
+- Live on Cloud Run: <your-cloud-run-url>
 - Multi-stage `Dockerfile` (Node build → Python 3.12-slim, non-root) and `.dockerignore`
 - Gemini key in Secret Manager; APIs enabled; build service account granted `roles/run.builder`
 - `docs/DEPLOY.md` runbook; ADR-013; OpenCV/NumPy dropped from runtime deps

@@ -59,7 +59,7 @@ Dockerfile
 .env.example
 ```
 
-**Docs discipline:** every change updates the relevant doc (see `docs/CONTRIBUTING.md`) and `CHANGELOG.md`. New design choices get an ADR in `docs/DECISIONS.md`.
+**Docs discipline:** every change updates the relevant doc and `CHANGELOG.md`. New design choices get an ADR in `docs/DECISIONS.md`.
 
 ## Pipeline
 1. **Validate upload**: exactly one file, `application/pdf`, ≤ 20 MB, ≤ 10 pages.
@@ -206,7 +206,7 @@ cd frontend && npm install && npm run dev      # dev (proxy /api to :8080)
 cd frontend && npm run build                   # builds to frontend/dist
 
 # deploy
-# full runbook: docs/DEPLOY.md (project gen-lang-client-0784934773)
+# full runbook: docs/DEPLOY.md (project <your-gcp-project>)
 gcloud run deploy regenmed-reviewer --source . --region northamerica-northeast2 \
   --allow-unauthenticated --set-secrets GEMINI_API_KEY=gemini-api-key:latest \
   --set-env-vars GEMINI_MODEL=gemini-3.1-pro-preview,GEMINI_THINKING_LEVEL=low,GEMINI_TIMEOUT_S=150 \
